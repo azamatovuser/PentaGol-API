@@ -42,6 +42,7 @@ urlpatterns = [
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('article/', include('apps.article.urls')),
+    path('team/', include('apps.team.urls')),
 ]
 
 if settings.DEBUG:

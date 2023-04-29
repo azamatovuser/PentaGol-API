@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     'ckeditor',
     'apps.article',
+    'apps.team',
 ]
 
 MIDDLEWARE = [
