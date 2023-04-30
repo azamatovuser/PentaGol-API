@@ -6,7 +6,7 @@ from django.db.models import Q
 
 
 class TeamListAPIView(generics.ListAPIView):
-    queryset = Team.objects.all()
+    queryset = Team.objects.order_by('-scores', '-goals')
     serializer_class = TeamSerializer
 
 
